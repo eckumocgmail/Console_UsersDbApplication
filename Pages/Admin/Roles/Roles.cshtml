@@ -1,0 +1,63 @@
+﻿@page
+@model Console_UsersDbApplication.Pages.Roles.IndexModel
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Интерфейсы пользователи </title>
+</head>
+<body>
+<p>
+    <a asp-page="Create"> Создать </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Наименование пользовательского интерфейса
+            </th>
+            <th>
+                
+            </th>
+            <th>
+                Код блокировки
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.AppRole.Count==0){
+                <tr>
+                    <td class="alert alert-info">Нет записей</td>
+                </tr>
+
+        }else{
+            @foreach (var item in Model.AppRole) 
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NormalizedName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ConcurrencyStamp)
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.AppRoleId"> Редактировать </a> |
+                        <a asp-page="./Details" asp-route-id="@item.AppRoleId"> Подробнее </a> |
+                        <a asp-page="./Delete" asp-route-id="@item.AppRoleId"> Удалитть </a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+</body>
+</html>

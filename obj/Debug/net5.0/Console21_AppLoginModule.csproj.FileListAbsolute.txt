@@ -1,0 +1,16 @@
+D:\NetProjects\Console21_AppLoginModule\bin\Debug\net5.0\Console21_AppLoginModule.exe
+D:\NetProjects\Console21_AppLoginModule\bin\Debug\net5.0\Console21_AppLoginModule.deps.json
+D:\NetProjects\Console21_AppLoginModule\bin\Debug\net5.0\Console21_AppLoginModule.runtimeconfig.json
+D:\NetProjects\Console21_AppLoginModule\bin\Debug\net5.0\Console21_AppLoginModule.runtimeconfig.dev.json
+D:\NetProjects\Console21_AppLoginModule\bin\Debug\net5.0\Console21_AppLoginModule.dll
+D:\NetProjects\Console21_AppLoginModule\bin\Debug\net5.0\Console21_AppLoginModule.pdb
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.csproj.AssemblyReference.cache
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.GeneratedMSBuildEditorConfig.editorconfig
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.AssemblyInfoInputs.cache
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.AssemblyInfo.cs
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.csproj.CoreCompileInputs.cache
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.dll
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\refint\Console21_AppLoginModule.dll
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.pdb
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\Console21_AppLoginModule.genruntimeconfig.cache
+D:\NetProjects\Console21_AppLoginModule\obj\Debug\net5.0\ref\Console21_AppLoginModule.dll

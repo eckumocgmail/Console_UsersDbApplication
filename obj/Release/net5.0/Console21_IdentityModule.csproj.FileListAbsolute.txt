@@ -1,0 +1,5 @@
+D:\NetProjects\Console21_Identityprogram\obj\Release\net5.0\Console21_IdentityModule.csproj.AssemblyReference.cache
+D:\NetProjects\Console21_Identityprogram\obj\Release\net5.0\Console21_IdentityModule.GeneratedMSBuildEditorConfig.editorconfig
+D:\NetProjects\Console21_Identityprogram\obj\Release\net5.0\Console21_IdentityModule.AssemblyInfoInputs.cache
+D:\NetProjects\Console21_Identityprogram\obj\Release\net5.0\Console21_IdentityModule.AssemblyInfo.cs
+D:\NetProjects\Console21_Identityprogram\obj\Release\net5.0\Console21_IdentityModule.csproj.CoreCompileInputs.cache

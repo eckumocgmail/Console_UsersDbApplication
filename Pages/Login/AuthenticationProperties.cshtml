@@ -1,0 +1,45 @@
+﻿@page
+@model Mvc_LoginViews.Pages.Authentication.AuthenticationPropertiesModel
+@{
+    Dictionary<string,bool> ExternalAuthProviders = new Dictionary<string, bool>()
+    {
+        { "Google", false } 
+    };
+}
+
+
+<div class="card">
+  <h5 class="card-header"> Модули внешних сервисов аутентификации </h5>
+  <div class="card-body">
+    <h5 class="card-title">
+        Выберите те сервисы пользователи которых будут иметь 
+        доступ к приложению </h5>
+    <div class="card-text">
+
+        <!-- CheckList -->
+        <!-- @Model IEnumerable<KeyValuePair<string,bool>> -->
+        <div class="list-group">
+            <div class="list-group-item">
+
+                @foreach(var kv in ExternalAuthProviders)
+                {
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <input type="checkbox">
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" value="Google">
+                    </div> 
+                }
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,39 @@
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+namespace Mvc_WwwLogin.Pages
+{
+    public class BasicAuthenticationHandler: IAuthenticationHandler
+    {
+       
+        protected Task<AuthenticateResult> HandleAuthenticateAsync()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<AuthenticateResult> AuthenticateAsync()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task ChallengeAsync(AuthenticationProperties properties)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task ForbidAsync(AuthenticationProperties properties)
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+}

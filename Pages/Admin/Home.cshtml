@@ -1,0 +1,88 @@
+﻿@page
+@model Console_UsersDbApplication.Pages.Admin.HomeModel
+@{
+}
+
+
+<div id="AdminTop">AdminTop</div>
+<div id="AdminMain">AdminMain</div>
+
+<!-- меню -->
+<div id="AdminMenu">
+    
+    <h2>Menu</h2>
+    <ul class="list-group">
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 1</li>
+        <li class="list-group-item">item 1</li>
+    </ul>
+</div>
+
+<!-- макет -->
+<div class="admin-home-container">
+    <div class="admin-home-container-header" id="AdminTopPane">
+
+    </div>
+    <div class="admin-home-container-body">
+        <div class="admin-home-container-body-left-pane" id="AdminMenuPane">
+
+        </div>
+        <div class="admin-home-container-body-right-pane" id="AdminMainPane">
+
+        </div>
+    </div>
+</div>
+<style>
+    ..admin-home-container
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: fixed;
+    }
+    .admin-home-container-header
+    {
+        width: 100%;        
+        display: flex;        
+        position: fixed;
+    }
+    .admin-home-container-body
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: fixed;
+        overflow-y: auto;
+    }
+    .admin-home-container-body-left-pane
+    {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: fixed;
+        overflow-y: auto;
+    }
+    .admin-home-container-body-right-pane
+    {      
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: fixed;
+        overflow-y: auto;
+    }
+</style>
+<script>
+    window.addEventListener('load',function(){
+        AdminTopPane.appendChild(AdminTop);
+        AdminMenuPane.appendChild(AdminMenu);
+        AdminMainPane.appendChild(AdminMainPane);
+    });
+</script>

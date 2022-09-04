@@ -1,0 +1,32 @@
+﻿@page
+@model Console_UsersDbApplication.Pages.RegisterModel
+@{
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <h2> Бизнес ресурсы </h2>
+            <button hidden id="HideFramesButton" onclick="
+                const frames = document.querySelectorAll('iframe');
+                for(let i=0; i<frames.length; i++){
+                    frames[i].style.display = 'none'
+                }
+
+            "></button>
+            <ul class="list-group">
+                <li class="list-group-item active"> Пользователи </li>
+                <li class="list-group-item" onclick="HideFramesButton.click(); this.classList.add('active')"> Администраторы </li>
+                <li class="list-group-item" onclick="HideFramesButton.click(); RolesCreateFrame.style.display='block'; "> (+) Создать </li>                            
+            </ul>
+        </div>
+        <div class="col-9">
+            <h2> Регистрация учетной записи </h2>
+            <iframe src="/Roles/Create" id="RolesCreateFrame" style="display: none;" class="w-100"></iframe>
+            <iframe src="/Roles/Index" id="RolesListFrame" style="display: none;" class="w-100"></iframe>
+            <iframe src="/Users/Index" id="UsersListFrame" style="display: none;" class="w-100"></iframe>
+
+
+        </div>
+    </div>
+</div>

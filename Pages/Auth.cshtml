@@ -1,0 +1,42 @@
+﻿@page
+@model Mvc_LoginViews.Pages.AuthModel
+@{
+}
+<div>
+    <form onsubmit="document.getElementById('AuthenticationPropertiesForm').onsubmit()" 
+          method="post"
+          id="AuthenticationPropertiesForm">
+
+        <h2>Authentication Properties</h2>
+        <div class="input-group">
+            <label> AllowRefresh </label>
+            <input class="form-control" type="checkbox" style="width: 100%;" 
+                   asp-for="@(Model.AuthenticationProperties.AllowRefresh )" />
+        </div>
+        <div class="input-group">
+            <label> ExpiresUtc </label>
+            <input class="form-control" type="datetime" style="width: 100%;" 
+                   asp-for="@(Model.AuthenticationProperties.ExpiresUtc )" />
+        </div>
+        <div class="input-group">
+            <label> IsPersistent </label>
+            <input class="form-control" type="checkbox" style="width: 100%;" 
+                   asp-for="@(Model.AuthenticationProperties.IsPersistent )" />
+        </div>
+        <div class="input-group">
+            <label> RedirectUri </label>
+            <input class="form-control" type="url" style="width: 100%;" 
+                   asp-for="@(Model.AuthenticationProperties.RedirectUri )" />
+        </div>
+            <div class="input-group">
+            <label> RedirectUri </label>
+            <input class="form-control" type="url" style="width: 100%;" 
+                   asp-for="@(Model.AuthenticationProperties.RedirectUri )" />
+        </div>
+
+    </form>
+    
+
+    <h2>Authentication Service</h2>
+
+</div>

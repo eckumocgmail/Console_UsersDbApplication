@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <a href="/Authentication">Authentication</a>
+    <a href="/Index">Index</a>
+    <a href="/Privacy">Privacy</a>
+    <a href="/User">User</a>
+    <a href="/Users">Users</a>
+    <a href="/Admin/Roles/Create">Roles</a>
+    <a href="/Admin/Roles/Delete">Roles</a>
+    <a href="/Admin/Roles/Details">Roles</a>
+    <a href="/Admin/Roles/Edit">Roles</a>
+    <a href="/Admin/Roles/Roles">Roles</a>
+    <a href="/Admin/Users/CreateUser">Users</a>
+    <a href="/Admin/Users/Delete">Users</a>
+    <a href="/Admin/Users/Details">Users</a>
+    <a href="/Admin/Users/Edit">Users</a>
+
+    <a href="/Login/AuthenticationProperties">AuthenticationProperties</a>
+    <a href="/Login/Login">Login</a>
+    <a href="/Login/Register">Register</a>
+    <a href="/Login/Registration">Registration</a>
+    <li class="nav-item">
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+    </li>
+    <li class="nav-item">
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post" >
+            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="/Login">Login</a>
+    </li>
+}
+</ul>
